@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Armata|Neuton" rel="stylesheet" type="text/css" />
+    <title>Three Portfolio Website 2024</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        --gap: 20em;
+        margin: 0;
+        background-color: #000;
+        font-family: "Armata", sans-serif;
+        color: #e0e0e0;
+      }
+      #container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 5em;
+      }
+      #three-canvas {
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .content-panel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 80vh;
+        width: 80%;
+        /* border: 3px solid #4f8e96; */
+        border-radius: 50px;
+        margin-bottom: var(--gap);
+        padding: 0 2em;
+      }
+      h1 {
+        font-size: 7em;
+        margin-bottom: 0;
+      }
+      h2 {
+        font-size: 2em;
+        margin-bottom: 0;
+      }
+      h3 {
+        font-size: 5em;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 1em;
+        color: #e0e0e0;
+        padding: 1em;
+      }
+      a:visited {
+        color: #e0e0e0;
+      }
+      a:hover {
+        color: #2244ff;
+        /* text-decoration: none; */
+      }
+      
+      #feature {
+        height: 60vh;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      .hero-panel {
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+        width: 80%;
+        /* border: 3px solid #e0e0e0; */
+        border-radius: 50px;
+        margin-bottom: var(--gap);
+        padding-top: 20em;
+      }
+      /* .hero-panel#footer {
+        margin-bottom: 5em;
+      } */
+    </style>
+    <script type="importmap">
+			{
+				"imports": {
+					"three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+          "jsm/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+			}
+		</script>
+  </head>
+  <body>
+    <div id="container">
+      <canvas id="three-canvas"></canvas>
+      <!-- content goes here -->
+      <div class="hero-panel">
+        <h1>3D DEV</h1>
+      </div>
+      <div class="content-panel">
+        <h2>Mastering 3JS</h2>
+        <h3>Navigating The Complexities Of 3D Coding</h3>
+        
+        <p>
+          I'm learning about ThreeJS, coding 3D and motion based sites for HTML, and designing innovative ideas. This site is a demonstration of what I have been learning, and it is also a site to see some of my other projects, with included links to reach me if you are interested in working on a custom project.
+        </p>
+      </div>
+      <div class="content-panel">
+        <h2><a href="https://akdavis83.github.io/Green-Cubes/" target="_blank" style="color: lawngreen;"> GREEN CUBES</a></h2>
+      </div>
+      <div class="content-panel">
+        <h2><a href="https://github.com/akdavis83" target="_blank" style="color: darkcyan;">GitHub Projects</a></h2>
+      </div>
+      <div class="content-panel">
+        <h2><a href="https://www.linkedin.com/in/alan-davis-41b1b22b9/" target="_blank" style="color: lightseagreen;">LinkedIn Profile</a></h2>
+        <h4 style="color: lightseagreen;">↓↓↓↓↓ Refresh Button/or/CTRL + R = 7 Different Animation Motions ↓↓↓↓↓</h4>
+      </div>
+      <div class="hero-panel" id="footer">
+        <a href="mail to: akdavis838@gmail.com"><h2 style="color: lightskyblue;">akdavis838@gmail.com</h2></a>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
